@@ -1,0 +1,122 @@
+body {
+  color: #000;
+  font-size: 20px;
+}
+
+.task-scene {
+  width: 1024px;
+  height: 560px;
+  border: 1px solid #777;
+  margin: 50px auto;
+  font-family: sans-serif;
+  padding: 15px 15px 120px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.task-text {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.task-answers {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: -10px -15px;
+}
+
+.task-answer-item {
+  border: 1px solid #3a76a3;
+  color: #3a76a3;
+  border-radius: 5px;
+  padding: 7px 15px;
+  cursor: pointer;
+  margin: 10px 15px;
+  white-space: nowrap;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.task-answer-item:hover {
+  background-color: #f2f2f2;
+}
+
+.task-answer-item.check {
+  background-color: #3a76a3;
+  color: #fff;
+}
+
+.task-answer-item.danger {
+  background-color: #f05a69;
+  border-color: #f05a69;
+  color: #fff;
+}
+
+.task-submit {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #fff;
+  cursor: pointer;
+  background-color: #70c5e2;
+  padding: 7px 15px;
+  border-radius: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.task-submit.disable {
+  background-color: #b9e0ed;
+  cursor: not-allowed;
+}
+
+.task-submit.success {
+  background-color: #8fbe83;
+}
+
+.task-submit.danger {
+  background-color: #f05a69;
+}
+
+.task-hint {
+  position: absolute;
+  bottom: 65px;
+  cursor: default;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #add9da;
+  border-radius: 5px;
+  padding: 7px 15px;
+  display: none;
+}
+
+.smooth {
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.block {
+  cursor: default;
+}
